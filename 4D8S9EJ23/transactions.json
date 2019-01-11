@@ -1,0 +1,14 @@
+{
+    "transactionTimeStamp": "1521162000000",
+    "ipAddress": "",
+    "longitude": "-75.01132",
+    "latitude": "39.914441",
+    "isCardPresent": "true",
+    "currency": "USD",
+    "amount": "24",
+    "transactionId": "10011521162000000",
+    "merchantType": "convenience_store",
+    "merchantId": "1001",
+    "accountType": "VISA",
+    "accountNumber": "19123"
+}
