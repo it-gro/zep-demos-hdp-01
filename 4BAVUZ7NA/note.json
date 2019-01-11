@@ -163,7 +163,7 @@
                 }
             },
             "dateUpdated": "2016-02-04T08:12:17+0000",
-            "text": "/* Let's start by creating a RDD for the data we just imported. Once an RDD is created we can create Temporary Table with Schema that allows us to run SparkSQL. The results of SQL queries are DataFrames and support all the normal RDD operations.*/\n\nval sqlContext = new org.apache.spark.sql.SQLContext(sc)\n\nval eventsFile = sc.textFile(\"hdfs:///user/zeppelin/SensorDemo/HVAC.csv\")\n\ncase class Event(Date: String, \n                Time: String, \n                TargetTemp: Float, \n                ActualTemp: Float, \n                System: String, \n                SystemAge: Int, \n                BuildingID: String)\n\n\n\nval eventsRDD = eventsFile.mapPartitionsWithIndex { (idx, iter) => if (idx == 0) iter.drop(1) else iter }.map(s=> s.split(\",\")).map( \n    s => Event(s(0),\n            s(1), \n            s(2).toFloat, \n            s(3).toFloat, \n            s(4), \n            s(5).toInt, \n            s(6)\n        )\n    )\n\neventsRDD.count\n\neventsRDD.toDF().registerTempTable(\"tempSeries\")"
+            "text": "/* Let's start by creating a RDD for the data we just imported. Once an RDD is created we can create Temporary Table with Schema that allows us to run SparkSQL. The results of SQL queries are DataFrames and support all the normal RDD operations.*/\n\nval sqlContext = new org.apache.spark.sql.SQLContext(sc)\n\nval eventsFile = sc.textFile(\"hdfs:///user/zeppelin/SensorDemo/HVAC.csv\")\n\ncase class Event(Date: String, \n                Time: String, \n                TargetTemp: Float, \n                ActualTemp: Float, \n                System: String, \n                SystemAge: Int, \n                BuildingID: String)\n\n\n\nval eventsRDD = eventsFile.mapPartitionsWithIndex { (idx, iter) => if (idx == 0) iter.drop(1) else iter }.map(s=> s.split(\",\")).map( \n    s => Event(s(0),\n            s(1), \n            s(2).toFloat, \n            s(3).toFloat, \n            s(4), \n            s(5).toInt, \n            s(6)\n        )\n    )\n\neventsRDD.count\n\neventsRDD.toDF().createOrReplaceTempView(\"tempSeries\")"
         },
         {
             "$$hashKey": "object:515",
@@ -48835,7 +48835,7 @@
                 }
             },
             "dateUpdated": "2016-02-04T08:12:17+0000",
-            "text": "%pyspark\n\nmodel = pipeline.fit(training)\n#training.show()\ntraining.registerTempTable(\"eventStaging\")\n"
+            "text": "%pyspark\n\nmodel = pipeline.fit(training)\n#training.show()\ntraining.createOrReplaceTempView(\"eventStaging\")\n"
         },
         {
             "$$hashKey": "object:521",
@@ -65041,7 +65041,7 @@
                 }
             },
             "dateUpdated": "2016-02-04T08:12:17+0000",
-            "text": "%pyspark\n\nselected.registerTempTable(\"predictedEvents\")"
+            "text": "%pyspark\n\nselected.createOrReplaceTempView(\"predictedEvents\")"
         },
         {
             "$$hashKey": "object:525",

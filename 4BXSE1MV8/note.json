@@ -2007,7 +2007,7 @@
             "dateUpdated": "Sep 14, 2016 10:25:39 PM",
             "authenticationInfo": {
             },
-            "text": "%pyspark\n\nprint log_status_to_count_df.columns\nlog_status_to_count_df.registerTempTable(\"logstatus\")\nprint sqlContext.read.table('logstatus').dtypes"
+            "text": "%pyspark\n\nprint log_status_to_count_df.columns\nlog_status_to_count_df.createOrReplaceTempView(\"logstatus\")\nprint sqlContext.read.table('logstatus').dtypes"
         },
         {
             "$$hashKey": "object:319",
@@ -3215,7 +3215,7 @@
             "dateUpdated": "Sep 14, 2016 10:26:00 PM",
             "authenticationInfo": {
             },
-            "text": "%pyspark\n\ndaily_hosts_df.registerTempTable(\"daily_hosts\")\nprint daily_hosts_df.count()"
+            "text": "%pyspark\n\ndaily_hosts_df.createOrReplaceTempView(\"daily_hosts\")\nprint daily_hosts_df.count()"
         },
         {
             "$$hashKey": "object:345",
@@ -3952,7 +3952,7 @@
             "dateUpdated": "Sep 14, 2016 10:26:06 PM",
             "authenticationInfo": {
             },
-            "text": "%pyspark\n\navg_daily_req_per_host_df.registerTempTable(\"req_per_host\")\nprint avg_daily_req_per_host_df.count()\n"
+            "text": "%pyspark\n\navg_daily_req_per_host_df.createOrReplaceTempView(\"req_per_host\")\nprint avg_daily_req_per_host_df.count()\n"
         },
         {
             "$$hashKey": "object:356",
