@@ -101,7 +101,7 @@
     {
       "text": "%sql \nselect age, count(1) value\nfrom bank \nwhere age \u003c 30 \ngroup by age \norder by age",
       "user": "it-gro",
-      "dateUpdated": "2019-01-19 18:06:57.026",
+      "dateUpdated": "2019-01-19 18:08:08.874",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -183,7 +183,7 @@
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere age \u003c ${maxAge\u003d30} \ngroup by age \norder by age",
       "user": "it-gro",
-      "dateUpdated": "2019-01-19 18:06:59.583",
+      "dateUpdated": "2019-01-19 18:08:08.960",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -274,7 +274,7 @@
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere marital\u003d\"${marital\u003dsingle,single|divorced|married}\" \ngroup by age \norder by age",
       "user": "it-gro",
-      "dateUpdated": "2019-01-19 18:07:07.795",
+      "dateUpdated": "2019-01-19 18:08:09.070",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -314,7 +314,9 @@
         "enabled": true,
         "editorSetting": {
           "language": "sql",
-          "editOnDblClick": false
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
         },
         "editorMode": "ace/mode/sql",
         "fontSize": 9.0,
@@ -490,7 +492,7 @@
       "progressUpdateIntervalMs": 500
     }
   ],
-  "name": "Demos/zeppelin.apache.org/Zeppelin Tutorial/Basic Features (Spark)",
+  "name": "Demos/zeppelin.apache.org/Basic Features (Spark",
   "id": "3A94M5J1Z",
   "noteParams": {},
   "noteForms": {},
