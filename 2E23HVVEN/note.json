@@ -2,8 +2,8 @@
   "paragraphs": [
     {
       "text": "%hive(oracle_hr_ext)\nSELECT current_user()",
-      "user": "admin",
-      "dateUpdated": "2019-01-19 17:44:59.605",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 18:04:41.016",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -16,21 +16,46 @@
               "optionOpen": false,
               "setting": {
                 "table": {
-                  "tableGridState": {},
+                  "tableGridState": {
+                    "columns": [
+                      {
+                        "name": "_c0",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      }
+                    ],
+                    "scrollFocus": {},
+                    "selection": [],
+                    "grouping": {
+                      "grouping": [],
+                      "aggregations": [],
+                      "rowExpandedStates": {}
+                    },
+                    "treeView": {},
+                    "pagination": {
+                      "paginationCurrentPage": 1.0,
+                      "paginationPageSize": 250.0
+                    }
+                  },
                   "tableColumnTypeState": {
+                    "updated": false,
                     "names": {
                       "_c0": "string"
-                    },
-                    "updated": false
+                    }
                   },
+                  "updated": false,
+                  "initialized": false,
                   "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
                   "tableOptionValue": {
                     "useFilter": false,
                     "showPagination": false,
                     "showAggregationFooter": false
-                  },
-                  "updated": false,
-                  "initialized": false
+                  }
                 }
               },
               "commonSetting": {}
@@ -61,15 +86,15 @@
       "jobName": "paragraph_1547919545695_-182607743",
       "id": "20190119-173905_230305140",
       "dateCreated": "2019-01-19 17:39:05.695",
-      "dateStarted": "2019-01-19 17:44:59.623",
-      "dateFinished": "2019-01-19 17:45:03.289",
+      "dateStarted": "2019-01-19 18:04:22.169",
+      "dateFinished": "2019-01-19 18:04:22.740",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%hive(oracle_hr_ext)\nshow databases",
-      "user": "admin",
-      "dateUpdated": "2019-01-19 17:45:03.347",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 18:04:22.769",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -127,15 +152,15 @@
       "jobName": "paragraph_1547917889747_1145684221",
       "id": "20190119-171129_969574266",
       "dateCreated": "2019-01-19 17:11:29.747",
-      "dateStarted": "2019-01-19 17:45:03.366",
-      "dateFinished": "2019-01-19 17:45:03.674",
+      "dateStarted": "2019-01-19 18:04:22.777",
+      "dateFinished": "2019-01-19 18:04:23.012",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%hive(oracle_hr_ext)\nshow tables",
-      "user": "admin",
-      "dateUpdated": "2019-01-19 17:45:03.764",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 18:04:23.076",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -193,15 +218,15 @@
       "jobName": "paragraph_1547919355581_1039917347",
       "id": "20190119-173555_1975325527",
       "dateCreated": "2019-01-19 17:35:55.581",
-      "dateStarted": "2019-01-19 17:45:03.786",
-      "dateFinished": "2019-01-19 17:45:04.123",
+      "dateStarted": "2019-01-19 18:04:23.088",
+      "dateFinished": "2019-01-19 18:04:23.310",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%hive(oracle_hr_ext)\nSELECT * from jobs\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-19 17:45:40.154",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 18:04:23.386",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -238,7 +263,12 @@
             }
           }
         },
-        "editorSetting": {}
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
       },
       "settings": {
         "params": {},
@@ -257,15 +287,15 @@
       "jobName": "paragraph_1547917910266_374239391",
       "id": "20190119-171150_1828108937",
       "dateCreated": "2019-01-19 17:11:50.266",
-      "dateStarted": "2019-01-19 17:45:40.172",
-      "dateFinished": "2019-01-19 17:45:40.647",
+      "dateStarted": "2019-01-19 18:04:23.396",
+      "dateFinished": "2019-01-19 18:04:23.873",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%hive(oracle_hr_ext)\nDESC employees",
-      "user": "admin",
-      "dateUpdated": "2019-01-19 17:45:04.698",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 18:04:23.896",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -325,31 +355,25 @@
       "jobName": "paragraph_1547919443834_-1218156959",
       "id": "20190119-173723_527007060",
       "dateCreated": "2019-01-19 17:37:23.834",
-      "dateStarted": "2019-01-19 17:45:04.725",
-      "dateFinished": "2019-01-19 17:45:05.003",
+      "dateStarted": "2019-01-19 18:04:23.906",
+      "dateFinished": "2019-01-19 18:04:24.111",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%hive\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-19 17:45:05.024",
-      "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {},
-        "editorSetting": {}
-      },
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 18:04:23.897",
+      "config": {},
       "settings": {
         "params": {},
         "forms": {}
       },
       "apps": [],
-      "jobName": "paragraph_1547919492824_1363327643",
-      "id": "20190119-173812_672715828",
-      "dateCreated": "2019-01-19 17:38:12.824",
-      "status": "FINISHED",
+      "jobName": "paragraph_1547921063896_1625376303",
+      "id": "20190119-180423_1878370441",
+      "dateCreated": "2019-01-19 18:04:23.897",
+      "status": "READY",
       "progressUpdateIntervalMs": 500
     }
   ],
