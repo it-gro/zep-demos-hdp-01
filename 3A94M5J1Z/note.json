@@ -3,7 +3,7 @@
     {
       "text": "%md\n## Welcome to Zeppelin.\n##### This is a live tutorial, you can run the code yourself. (Shift-Enter to Run)",
       "user": "it-gro",
-      "dateUpdated": "2019-01-19 18:06:03.452",
+      "dateUpdated": "2019-01-19 20:24:48.390",
       "config": {
         "colWidth": 12.0,
         "editorHide": true,
@@ -46,8 +46,8 @@
       "jobName": "paragraph_1423836981412_-1007008116",
       "id": "20150213-231621_168813393",
       "dateCreated": "2015-02-13 23:16:21.000",
-      "dateStarted": "2019-01-19 18:06:03.467",
-      "dateFinished": "2019-01-19 18:06:03.472",
+      "dateStarted": "2019-01-19 20:24:48.400",
+      "dateFinished": "2019-01-19 20:24:48.405",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
@@ -55,7 +55,7 @@
       "title": "Load data into table",
       "text": "import org.apache.commons.io.IOUtils\nimport java.net.URL\nimport java.nio.charset.Charset\n\n// Zeppelin creates and injects sc (SparkContext) and sqlContext (HiveContext or SqlContext)\n// So you don\u0027t need create them manually\n\n// load bank data\nval bankText \u003d sc.parallelize(\n    IOUtils.toString(\n        new URL(\"https://s3.amazonaws.com/apache-zeppelin/tutorial/bank/bank.csv\"),\n        Charset.forName(\"utf8\")).split(\"\\n\"))\n\ncase class Bank(age: Integer, job: String, marital: String, education: String, balance: Integer)\n\nval bank \u003d bankText.map(s \u003d\u003e s.split(\";\")).filter(s \u003d\u003e s(0) !\u003d \"\\\"age\\\"\").map(\n    s \u003d\u003e Bank(s(0).toInt, \n            s(1).replaceAll(\"\\\"\", \"\"),\n            s(2).replaceAll(\"\\\"\", \"\"),\n            s(3).replaceAll(\"\\\"\", \"\"),\n            s(5).replaceAll(\"\\\"\", \"\").toInt\n        )\n).toDF()\nbank.createOrReplaceTempView(\"bank\")",
       "user": "it-gro",
-      "dateUpdated": "2019-01-19 18:06:03.566",
+      "dateUpdated": "2019-01-19 20:24:48.499",
       "config": {
         "colWidth": 12.0,
         "title": true,
@@ -72,7 +72,9 @@
         ],
         "editorSetting": {
           "language": "scala",
-          "editOnDblClick": false
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
         },
         "fontSize": 9.0
       },
@@ -93,15 +95,15 @@
       "jobName": "paragraph_1423500779206_-1502780787",
       "id": "20150210-015259_1403135953",
       "dateCreated": "2015-02-10 01:52:59.000",
-      "dateStarted": "2019-01-19 18:06:03.578",
-      "dateFinished": "2019-01-19 18:06:44.641",
+      "dateStarted": "2019-01-19 20:24:48.513",
+      "dateFinished": "2019-01-19 20:25:34.172",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sql \nselect age, count(1) value\nfrom bank \nwhere age \u003c 30 \ngroup by age \norder by age",
       "user": "it-gro",
-      "dateUpdated": "2019-01-19 18:08:08.874",
+      "dateUpdated": "2019-01-19 20:25:46.489",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -175,15 +177,15 @@
       "jobName": "paragraph_1423500782552_-1439281894",
       "id": "20150210-015302_1492795503",
       "dateCreated": "2015-02-10 01:53:02.000",
-      "dateStarted": "2019-01-19 18:06:44.680",
-      "dateFinished": "2019-01-19 18:06:52.741",
+      "dateStarted": "2019-01-19 20:25:34.230",
+      "dateFinished": "2019-01-19 20:25:42.439",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere age \u003c ${maxAge\u003d30} \ngroup by age \norder by age",
       "user": "it-gro",
-      "dateUpdated": "2019-01-19 18:08:08.960",
+      "dateUpdated": "2019-01-19 20:25:46.502",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -266,15 +268,15 @@
       "jobName": "paragraph_1423720444030_-1424110477",
       "id": "20150212-145404_867439529",
       "dateCreated": "2015-02-12 14:54:04.000",
-      "dateStarted": "2019-01-19 18:06:52.839",
-      "dateFinished": "2019-01-19 18:06:54.878",
+      "dateStarted": "2019-01-19 20:25:42.516",
+      "dateFinished": "2019-01-19 20:25:44.302",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere marital\u003d\"${marital\u003dsingle,single|divorced|married}\" \ngroup by age \norder by age",
       "user": "it-gro",
-      "dateUpdated": "2019-01-19 18:08:09.070",
+      "dateUpdated": "2019-01-19 20:25:46.515",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -371,15 +373,15 @@
       "jobName": "paragraph_1423836262027_-210588283",
       "id": "20150213-230422_1600658137",
       "dateCreated": "2015-02-13 23:04:22.000",
-      "dateStarted": "2019-01-19 18:06:54.962",
-      "dateFinished": "2019-01-19 18:06:56.749",
+      "dateStarted": "2019-01-19 20:25:44.331",
+      "dateFinished": "2019-01-19 20:25:46.182",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n## Congratulations, it\u0027s done.\n##### You can create your own notebook in \u0027Notebook\u0027 menu. Good luck!",
       "user": "it-gro",
-      "dateUpdated": "2019-01-19 18:06:56.771",
+      "dateUpdated": "2019-01-19 20:25:46.247",
       "config": {
         "colWidth": 12.0,
         "editorHide": true,
@@ -418,15 +420,15 @@
       "jobName": "paragraph_1423836268492_216498320",
       "id": "20150213-230428_1231780373",
       "dateCreated": "2015-02-13 23:04:28.000",
-      "dateStarted": "2019-01-19 18:06:56.784",
-      "dateFinished": "2019-01-19 18:06:56.789",
+      "dateStarted": "2019-01-19 20:25:46.265",
+      "dateFinished": "2019-01-19 20:25:46.269",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n\nAbout bank data\n\n```\nCitation Request:\n  This dataset is public available for research. The details are described in [Moro et al., 2011]. \n  Please include this citation if you plan to use this database:\n\n  [Moro et al., 2011] S. Moro, R. Laureano and P. Cortez. Using Data Mining for Bank Direct Marketing: An Application of the CRISP-DM Methodology. \n  In P. Novais et al. (Eds.), Proceedings of the European Simulation and Modelling Conference - ESM\u00272011, pp. 117-121, Guimarães, Portugal, October, 2011. EUROSIS.\n\n  Available at: [pdf] http://hdl.handle.net/1822/14838\n                [bib] http://www3.dsi.uminho.pt/pcortez/bib/2011-esm-1.txt\n```",
       "user": "it-gro",
-      "dateUpdated": "2019-01-19 18:06:56.882",
+      "dateUpdated": "2019-01-19 20:25:46.365",
       "config": {
         "colWidth": 12.0,
         "editorHide": true,
@@ -465,20 +467,26 @@
       "jobName": "paragraph_1427420818407_872443482",
       "id": "20150326-214658_12335843",
       "dateCreated": "2015-03-26 21:46:58.000",
-      "dateStarted": "2019-01-19 18:06:56.907",
-      "dateFinished": "2019-01-19 18:06:56.939",
+      "dateStarted": "2019-01-19 20:25:46.376",
+      "dateFinished": "2019-01-19 20:25:46.382",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "user": "it-gro",
-      "dateUpdated": "2019-01-19 18:06:56.999",
+      "dateUpdated": "2019-01-19 20:25:46.475",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
         "enabled": true,
         "results": {},
-        "editorSetting": {}
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
       },
       "settings": {
         "params": {},
@@ -500,6 +508,7 @@
     "md:shared_process": [],
     "sh:shared_process": [],
     "file:shared_process": [],
+    "pig:shared_process": [],
     "spark:shared_process": [],
     "hive:shared_process": []
   },
