@@ -1,0 +1,236 @@
+{
+  "paragraphs": [
+    {
+      "text": "%file\nls /\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-19 17:54:08.378",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/undefined"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "apps\ntmp\nuser\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547920074262_-2135750673",
+      "id": "20190119-174754_148341797",
+      "dateCreated": "2019-01-19 17:47:54.262",
+      "dateStarted": "2019-01-19 17:54:08.396",
+      "dateFinished": "2019-01-19 17:54:08.415",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n`CTRL` `.` zum Kompletieren",
+      "user": "admin",
+      "dateUpdated": "2019-01-19 17:54:08.495",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "editOnDblClick": true,
+          "completionSupport": false,
+          "language": "markdown"
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003ccode\u003eCTRL\u003c/code\u003e \u003ccode\u003e.\u003c/code\u003e zum Kompletieren\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547920158348_-580725042",
+      "id": "20190119-174918_1502857538",
+      "dateCreated": "2019-01-19 17:49:18.348",
+      "dateStarted": "2019-01-19 17:54:08.505",
+      "dateFinished": "2019-01-19 17:54:08.510",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%file\nls -l /user/hp01/examples\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-19 17:54:08.605",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/undefined"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "drwxr-xr-x\t-\t hp01\thdfs\t0\t2019-01-19 16:38GMT\t/user/hp01/examples/colors\ndrwxr-xr-x\t-\t hp01\thdfs\t0\t2019-01-19 15:19GMT\t/user/hp01/examples/dslabs\ndrwxr-xr-x\t-\t hp01\thdfs\t0\t2019-01-19 15:19GMT\t/user/hp01/examples/ita_traces\ndrwxr-xr-x\t-\t hp01\thdfs\t0\t2019-01-19 15:19GMT\t/user/hp01/examples/kddcup99\ndrwxr-xr-x\t-\t hp01\thdfs\t0\t2019-01-19 15:16GMT\t/user/hp01/examples/oracle\ndrwxr-xr-x\t-\t hp01\thdfs\t0\t2019-01-19 15:18GMT\t/user/hp01/examples/uci_ml_bank\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547920130037_71276410",
+      "id": "20190119-174850_774766220",
+      "dateCreated": "2019-01-19 17:48:50.037",
+      "dateStarted": "2019-01-19 17:54:08.616",
+      "dateFinished": "2019-01-19 17:54:08.631",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\nWenn `%sh` verfügbar ist, dann geht auch:\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-19 17:54:08.715",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "editOnDblClick": true,
+          "completionSupport": false,
+          "language": "markdown"
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eWenn \u003ccode\u003e%sh\u003c/code\u003e verfügbar ist, dann geht auch:\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547920383660_-553366469",
+      "id": "20190119-175303_322322917",
+      "dateCreated": "2019-01-19 17:53:03.660",
+      "dateStarted": "2019-01-19 17:54:08.726",
+      "dateFinished": "2019-01-19 17:54:08.731",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\nhdfs dfs -ls /user/hp01/examples",
+      "user": "admin",
+      "dateUpdated": "2019-01-19 17:54:08.826",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": false,
+          "language": "sh"
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Found 6 items\ndrwxr-xr-x   - hp01 hdfs          0 2019-01-19 16:38 /user/hp01/examples/colors\ndrwxr-xr-x   - hp01 hdfs          0 2019-01-19 15:19 /user/hp01/examples/dslabs\ndrwxr-xr-x   - hp01 hdfs          0 2019-01-19 15:19 /user/hp01/examples/ita_traces\ndrwxr-xr-x   - hp01 hdfs          0 2019-01-19 15:19 /user/hp01/examples/kddcup99\ndrwxr-xr-x   - hp01 hdfs          0 2019-01-19 15:16 /user/hp01/examples/oracle\ndrwxr-xr-x   - hp01 hdfs          0 2019-01-19 15:18 /user/hp01/examples/uci_ml_bank\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547920294535_-1639758822",
+      "id": "20190119-175134_876804421",
+      "dateCreated": "2019-01-19 17:51:34.535",
+      "dateStarted": "2019-01-19 17:54:08.839",
+      "dateFinished": "2019-01-19 17:54:10.604",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%file\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-19 17:54:10.640",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/undefined"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1547920314879_1855067679",
+      "id": "20190119-175154_1768952504",
+      "dateCreated": "2019-01-19 17:51:54.879",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "LAB / HDFS / 01 check access",
+  "id": "2E4B671KY",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "md:shared_process": [],
+    "sh:shared_process": [],
+    "file:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
