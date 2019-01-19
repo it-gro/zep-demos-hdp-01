@@ -1,0 +1,367 @@
+{
+  "paragraphs": [
+    {
+      "text": "%hive(oracle_hr_ext)\nSELECT current_user()",
+      "user": "admin",
+      "dateUpdated": "2019-01-19 17:44:59.605",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "_c0": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "_c0\nhive\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547919545695_-182607743",
+      "id": "20190119-173905_230305140",
+      "dateCreated": "2019-01-19 17:39:05.695",
+      "dateStarted": "2019-01-19 17:44:59.623",
+      "dateFinished": "2019-01-19 17:45:03.289",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%hive(oracle_hr_ext)\nshow databases",
+      "user": "admin",
+      "dateUpdated": "2019-01-19 17:45:03.347",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "database_name": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "database_name\ncolors_ext\ndefault\ndslabs_ext\nhive_example_foodmart\nhive_example_hue\nhive_example_sample\nhive_example_xademo\nita_traces\nkddcup99\nmovielens_100k\nmovielens_latest_small\nopenaq_org\noracle_hr_ext\noracle_scott\noracle_scott_avro\noracle_scott_ext\noracle_scott_import\noracle_scott_orc\noracle_scott_parq\noracle_scott_rcf\noracle_scott_seq\noracle_scott_text\nuci_ml_bank\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547917889747_1145684221",
+      "id": "20190119-171129_969574266",
+      "dateCreated": "2019-01-19 17:11:29.747",
+      "dateStarted": "2019-01-19 17:45:03.366",
+      "dateFinished": "2019-01-19 17:45:03.674",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%hive(oracle_hr_ext)\nshow tables",
+      "user": "admin",
+      "dateUpdated": "2019-01-19 17:45:03.764",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "tab_name": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "tab_name\ncountries\ndepartments\nemployees\njob_history\njobs\nlocations\nregions\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547919355581_1039917347",
+      "id": "20190119-173555_1975325527",
+      "dateCreated": "2019-01-19 17:35:55.581",
+      "dateStarted": "2019-01-19 17:45:03.786",
+      "dateFinished": "2019-01-19 17:45:04.123",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%hive(oracle_hr_ext)\nSELECT * from jobs\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-19 17:45:40.154",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "jobs.job_id": "string",
+                      "jobs.job_title": "string",
+                      "jobs.min_salary": "string",
+                      "jobs.max_salary": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "jobs.job_id\tjobs.job_title\tjobs.min_salary\tjobs.max_salary\nAD_PRES\tPresident\t20080\t40000\nAD_VP\tAdministration Vice President\t15000\t30000\nAD_ASST\tAdministration Assistant\t3000\t6000\nFI_MGR\tFinance Manager\t8200\t16000\nFI_ACCOUNT\tAccountant\t4200\t9000\nAC_MGR\tAccounting Manager\t8200\t16000\nAC_ACCOUNT\tPublic Accountant\t4200\t9000\nSA_MAN\tSales Manager\t10000\t20080\nSA_REP\tSales Representative\t6000\t12008\nPU_MAN\tPurchasing Manager\t8000\t15000\nPU_CLERK\tPurchasing Clerk\t2500\t5500\nST_MAN\tStock Manager\t5500\t8500\nST_CLERK\tStock Clerk\t2008\t5000\nSH_CLERK\tShipping Clerk\t2500\t5500\nIT_PROG\tProgrammer\t4000\t10000\nMK_MAN\tMarketing Manager\t9000\t15000\nMK_REP\tMarketing Representative\t4000\t9000\nHR_REP\tHuman Resources Representative\t4000\t9000\nPR_REP\tPublic Relations Representative\t4500\t10500\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547917910266_374239391",
+      "id": "20190119-171150_1828108937",
+      "dateCreated": "2019-01-19 17:11:50.266",
+      "dateStarted": "2019-01-19 17:45:40.172",
+      "dateFinished": "2019-01-19 17:45:40.647",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%hive(oracle_hr_ext)\nDESC employees",
+      "user": "admin",
+      "dateUpdated": "2019-01-19 17:45:04.698",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "col_name": "string",
+                      "data_type": "string",
+                      "comment": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "col_name\tdata_type\tcomment\nemployee_id\tstring\tfrom deserializer\nfirst_name\tstring\tfrom deserializer\nlast_name\tstring\tfrom deserializer\nemail\tstring\tfrom deserializer\nphone_number\tstring\tfrom deserializer\nhire_date\tstring\tfrom deserializer\njob_id\tstring\tfrom deserializer\nsalary\tstring\tfrom deserializer\ncommission_pct\tstring\tfrom deserializer\nmanager_id\tstring\tfrom deserializer\ndepartment_id\tstring\tfrom deserializer\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547919443834_-1218156959",
+      "id": "20190119-173723_527007060",
+      "dateCreated": "2019-01-19 17:37:23.834",
+      "dateStarted": "2019-01-19 17:45:04.725",
+      "dateFinished": "2019-01-19 17:45:05.003",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%hive\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-19 17:45:05.024",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1547919492824_1363327643",
+      "id": "20190119-173812_672715828",
+      "dateCreated": "2019-01-19 17:38:12.824",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Lab / HIVE / 01 check access",
+  "id": "2E23HVVEN",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "hive:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
