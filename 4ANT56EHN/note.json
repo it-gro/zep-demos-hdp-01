@@ -598,10 +598,10 @@
       "title": "Spending (In Billions) By Year",
       "text": "%hive\nselect year,sum(spending)/1000 SpendinginBillions \nfrom health_table \ngroup by year \norder by SpendinginBillions\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-19 23:58:39.210",
+      "dateUpdated": "2019-01-19 23:59:30.087",
       "config": {
         "enabled": true,
-        "editorMode": "ace/mode/scala",
+        "editorMode": "ace/mode/sql",
         "editorHide": false,
         "title": true,
         "colWidth": 4.0,
@@ -640,7 +640,11 @@
           }
         ],
         "fontSize": 9.0,
-        "editorSetting": {}
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -1314,7 +1318,7 @@
       "progressUpdateIntervalMs": 500
     }
   ],
-  "name": "Demos/HDP-Gallery/Demos / Hive / Australian Dataset",
+  "name": "Demos/HDP/Demos/Hive/Australian Dataset",
   "id": "4ANT56EHN",
   "noteParams": {},
   "noteForms": {},
