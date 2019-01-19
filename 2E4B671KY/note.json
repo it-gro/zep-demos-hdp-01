@@ -3,7 +3,7 @@
     {
       "text": "%file\nls /\n",
       "user": "admin",
-      "dateUpdated": "2019-01-19 17:54:08.378",
+      "dateUpdated": "2019-01-19 18:03:19.297",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -32,15 +32,15 @@
       "jobName": "paragraph_1547920074262_-2135750673",
       "id": "20190119-174754_148341797",
       "dateCreated": "2019-01-19 17:47:54.262",
-      "dateStarted": "2019-01-19 17:54:08.396",
-      "dateFinished": "2019-01-19 17:54:08.415",
+      "dateStarted": "2019-01-19 18:03:19.306",
+      "dateFinished": "2019-01-19 18:03:19.315",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n`CTRL` `.` zum Kompletieren",
       "user": "admin",
-      "dateUpdated": "2019-01-19 17:54:08.495",
+      "dateUpdated": "2019-01-19 18:03:19.405",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -72,15 +72,15 @@
       "jobName": "paragraph_1547920158348_-580725042",
       "id": "20190119-174918_1502857538",
       "dateCreated": "2019-01-19 17:49:18.348",
-      "dateStarted": "2019-01-19 17:54:08.505",
-      "dateFinished": "2019-01-19 17:54:08.510",
+      "dateStarted": "2019-01-19 18:03:19.414",
+      "dateFinished": "2019-01-19 18:03:19.421",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%file\nls -l /user/hp01/examples\n",
       "user": "admin",
-      "dateUpdated": "2019-01-19 17:54:08.605",
+      "dateUpdated": "2019-01-19 18:03:19.514",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -109,15 +109,15 @@
       "jobName": "paragraph_1547920130037_71276410",
       "id": "20190119-174850_774766220",
       "dateCreated": "2019-01-19 17:48:50.037",
-      "dateStarted": "2019-01-19 17:54:08.616",
-      "dateFinished": "2019-01-19 17:54:08.631",
+      "dateStarted": "2019-01-19 18:03:19.535",
+      "dateFinished": "2019-01-19 18:03:19.552",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\nWenn `%sh` verfügbar ist, dann geht auch:\n",
       "user": "admin",
-      "dateUpdated": "2019-01-19 17:54:08.715",
+      "dateUpdated": "2019-01-19 18:03:19.627",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -149,15 +149,15 @@
       "jobName": "paragraph_1547920383660_-553366469",
       "id": "20190119-175303_322322917",
       "dateCreated": "2019-01-19 17:53:03.660",
-      "dateStarted": "2019-01-19 17:54:08.726",
-      "dateFinished": "2019-01-19 17:54:08.731",
+      "dateStarted": "2019-01-19 18:03:19.640",
+      "dateFinished": "2019-01-19 18:03:19.655",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sh\nhdfs dfs -ls /user/hp01/examples",
       "user": "admin",
-      "dateUpdated": "2019-01-19 17:54:08.826",
+      "dateUpdated": "2019-01-19 18:03:19.739",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -187,15 +187,15 @@
       "jobName": "paragraph_1547920294535_-1639758822",
       "id": "20190119-175134_876804421",
       "dateCreated": "2019-01-19 17:51:34.535",
-      "dateStarted": "2019-01-19 17:54:08.839",
-      "dateFinished": "2019-01-19 17:54:10.604",
+      "dateStarted": "2019-01-19 18:03:19.752",
+      "dateFinished": "2019-01-19 18:03:21.596",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%file\n",
       "user": "admin",
-      "dateUpdated": "2019-01-19 17:54:10.640",
+      "dateUpdated": "2019-01-19 18:03:21.665",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -220,7 +220,7 @@
       "progressUpdateIntervalMs": 500
     }
   ],
-  "name": "LAB / HDFS / 01 check access",
+  "name": "Lab / HDFS / 01 check access",
   "id": "2E4B671KY",
   "noteParams": {},
   "noteForms": {},
