@@ -506,7 +506,7 @@
     {
       "text": "%sql\n\nselect dayofWeek, case when depDelay \u003e 15 then \u0027delayed\u0027 else \u0027ok\u0027 end , count(1)\nfrom data_2007tmp \ngroup by dayofweek , case when depDelay \u003e 15 then \u0027delayed\u0027 else \u0027ok\u0027 end ",
       "user": "it-gro",
-      "dateUpdated": "2019-01-20 01:34:35.252",
+      "dateUpdated": "2019-01-20 02:01:31.877",
       "config": {
         "enabled": true,
         "editorMode": "ace/mode/sql",
@@ -856,7 +856,7 @@
     {
       "text": "%sql\n\nselect cast( cast(crsDepTime as int) / 100 as int) as hour,  case when depDelay \u003e 15 then \u0027delayed\u0027 else \u0027ok\u0027 end as delay, count(1) as count\nfrom  data_2007tmp \ngroup by  cast( cast(crsDepTime as int) / 100 as int),  case when depDelay \u003e 15 then \u0027delayed\u0027 else \u0027ok\u0027 end\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-20 01:36:42.292",
+      "dateUpdated": "2019-01-20 02:01:32.116",
       "config": {
         "enabled": true,
         "editorMode": "ace/mode/sql",
@@ -3276,7 +3276,7 @@
       "progressUpdateIntervalMs": 500
     }
   ],
-  "name": "Demos/HDP/Demos / Spark / ML / Predicting Airline Delays",
+  "name": "Demos/HDP/Demos (ToDo)/ Spark / ML / Predicting Airline Delays",
   "id": "4BB5CUPUW",
   "noteParams": {},
   "noteForms": {},
