@@ -3276,7 +3276,7 @@
       "progressUpdateIntervalMs": 500
     }
   ],
-  "name": "Demos/HDP-Gallery/Demos / Spark / ML / Predicting Airline Delays",
+  "name": "Demos/HDP/Demos / Spark / ML / Predicting Airline Delays",
   "id": "4BB5CUPUW",
   "noteParams": {},
   "noteForms": {},
