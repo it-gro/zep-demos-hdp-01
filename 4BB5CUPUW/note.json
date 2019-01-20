@@ -3,10 +3,10 @@
     {
       "text": "%md\n\n# Hortonworks Blog - Predicting Airline Delays\n\nThis notebook is based on Blog posts below, by [Ofer Mendelevitch](http://hortonworks.com/blog/author/ofermend/)\n[http://hortonworks.com/blog/data-science-apacheh-hadoop-predicting-airline-delays/](http://hortonworks.com/blog/data-science-apacheh-hadoop-predicting-airline-delays/)\n[http://hortonworks.com/blog/data-science-hadoop-spark-scala-part-2/](http://hortonworks.com/blog/data-science-hadoop-spark-scala-part-2/)",
       "user": "it-gro",
-      "dateUpdated": "2019-01-20 02:02:03.853",
+      "dateUpdated": "2019-01-20 02:04:31.815",
       "config": {
         "enabled": true,
-        "editorHide": false,
+        "editorHide": true,
         "editorMode": "ace/mode/markdown",
         "colWidth": 12.0,
         "results": [
@@ -47,8 +47,8 @@
       "jobName": "paragraph_1453834308164_195465260",
       "id": "20160126-185148_1042529576",
       "dateCreated": "2016-01-26 06:51:48.000",
-      "dateStarted": "2019-01-20 02:02:03.907",
-      "dateFinished": "2019-01-20 02:02:03.932",
+      "dateStarted": "2019-01-20 02:04:25.014",
+      "dateFinished": "2019-01-20 02:04:25.033",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
