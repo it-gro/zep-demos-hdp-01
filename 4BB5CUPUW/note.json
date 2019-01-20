@@ -1,12 +1,12 @@
 {
   "paragraphs": [
     {
-      "text": "%md\n\n#Hortonworks Blog - Predicting Airline Delays\n\nThis notebook is based on Blog posts below, by [Ofer Mendelevitch](http://hortonworks.com/blog/author/ofermend/)\n[http://hortonworks.com/blog/data-science-apacheh-hadoop-predicting-airline-delays/](http://hortonworks.com/blog/data-science-apacheh-hadoop-predicting-airline-delays/)\n[http://hortonworks.com/blog/data-science-hadoop-spark-scala-part-2/](http://hortonworks.com/blog/data-science-hadoop-spark-scala-part-2/)",
+      "text": "%md\n\n# Hortonworks Blog - Predicting Airline Delays\n\nThis notebook is based on Blog posts below, by [Ofer Mendelevitch](http://hortonworks.com/blog/author/ofermend/)\n[http://hortonworks.com/blog/data-science-apacheh-hadoop-predicting-airline-delays/](http://hortonworks.com/blog/data-science-apacheh-hadoop-predicting-airline-delays/)\n[http://hortonworks.com/blog/data-science-hadoop-spark-scala-part-2/](http://hortonworks.com/blog/data-science-hadoop-spark-scala-part-2/)",
       "user": "it-gro",
-      "dateUpdated": "2019-01-20 01:23:08.867",
+      "dateUpdated": "2019-01-20 02:02:03.853",
       "config": {
         "enabled": true,
-        "editorHide": true,
+        "editorHide": false,
         "editorMode": "ace/mode/markdown",
         "colWidth": 12.0,
         "results": [
@@ -34,7 +34,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e#Hortonworks Blog - Predicting Airline Delays\u003c/p\u003e\n\u003cp\u003eThis notebook is based on Blog posts below, by \u003ca href\u003d\"http://hortonworks.com/blog/author/ofermend/\"\u003eOfer Mendelevitch\u003c/a\u003e\u003cbr/\u003e\u003ca href\u003d\"http://hortonworks.com/blog/data-science-apacheh-hadoop-predicting-airline-delays/\"\u003ehttp://hortonworks.com/blog/data-science-apacheh-hadoop-predicting-airline-delays/\u003c/a\u003e\u003cbr/\u003e\u003ca href\u003d\"http://hortonworks.com/blog/data-science-hadoop-spark-scala-part-2/\"\u003ehttp://hortonworks.com/blog/data-science-hadoop-spark-scala-part-2/\u003c/a\u003e\u003c/p\u003e\n\u003c/div\u003e"
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eHortonworks Blog - Predicting Airline Delays\u003c/h1\u003e\n\u003cp\u003eThis notebook is based on Blog posts below, by \u003ca href\u003d\"http://hortonworks.com/blog/author/ofermend/\"\u003eOfer Mendelevitch\u003c/a\u003e\u003cbr/\u003e\u003ca href\u003d\"http://hortonworks.com/blog/data-science-apacheh-hadoop-predicting-airline-delays/\"\u003ehttp://hortonworks.com/blog/data-science-apacheh-hadoop-predicting-airline-delays/\u003c/a\u003e\u003cbr/\u003e\u003ca href\u003d\"http://hortonworks.com/blog/data-science-hadoop-spark-scala-part-2/\"\u003ehttp://hortonworks.com/blog/data-science-hadoop-spark-scala-part-2/\u003c/a\u003e\u003c/p\u003e\n\u003c/div\u003e"
           }
         ]
       },
@@ -47,8 +47,8 @@
       "jobName": "paragraph_1453834308164_195465260",
       "id": "20160126-185148_1042529576",
       "dateCreated": "2016-01-26 06:51:48.000",
-      "dateStarted": "2019-01-20 01:23:08.908",
-      "dateFinished": "2019-01-20 01:23:08.911",
+      "dateStarted": "2019-01-20 02:02:03.907",
+      "dateFinished": "2019-01-20 02:02:03.932",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
@@ -105,9 +105,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%sh\n\n# wget http://stat-computing.org/dataexpo/2009/2007.csv.bz2 -O /tmp/flights_2007.csv.bz2\n# wget http://stat-computing.org/dataexpo/2009/2008.csv.bz2 -O /tmp/flights_2008.csv.bz2\n# wget ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/by_year/2007.csv.gz -O /tmp/weather_2007.csv.gz\n# wget ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/by_year/2008.csv.gz -O /tmp/weather_2008.csv.gz\necho \"downloaded\"\nls /tmp/wea*",
+      "text": "%sh\n\n# wget http://stat-computing.org/dataexpo/2009/2007.csv.bz2 -O /tmp/flights_2007.csv.bz2\n# wget http://stat-computing.org/dataexpo/2009/2008.csv.bz2 -O /tmp/flights_2008.csv.bz2\n# wget ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/by_year/2007.csv.gz -O /tmp/weather_2007.csv.gz\n# wget ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/by_year/2008.csv.gz -O /tmp/weather_2008.csv.gz\necho \"downloaded\"\nls -l /tmp/fli*\nls -l /tmp/wea*\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-20 01:50:53.240",
+      "dateUpdated": "2019-01-20 02:02:42.967",
       "config": {
         "enabled": true,
         "editorHide": false,
@@ -151,7 +151,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "downloaded\n/tmp/weather_2007.csv.gz\n/tmp/weather_2008.csv.gz\n"
+            "data": "downloaded\n-rw-rw-rw- 1 zeppelin zeppelin 570151613 Jan 19 21:03 /tmp/flights00.csv\n-rw-rw-rw- 1 zeppelin zeppelin 538432875 Jan 19 21:02 /tmp/flights98.csv\n-rw-rw-rw- 1 zeppelin zeppelin 552926022 Jan 19 21:03 /tmp/flights99.csv\n-rw-r--r-- 1 zeppelin zeppelin 121249243 Aug 22  2014 /tmp/flights_2007.csv.bz2\n-rw-r--r-- 1 zeppelin zeppelin 113753229 Dec  9  2014 /tmp/flights_2008.csv.bz2\n\n/tmp/flink-dist-cache-c6020893-faab-439c-83dd-1c664eb2f322:\ntotal 0\n\n/tmp/flink-io-16600ae6-9bc1-4479-999c-2cd848a6c24d:\ntotal 0\n-rw-r--r-- 1 zeppelin zeppelin 100506632 Jan 20 01:24 /tmp/weather_2007.csv.gz\n-rw-r--r-- 1 zeppelin zeppelin 203005891 Jan 20 01:50 /tmp/weather_2008.csv.gz\n"
           }
         ]
       },
@@ -164,15 +164,15 @@
       "jobName": "paragraph_1453805843495_-186074015",
       "id": "20160126-105723_924675048",
       "dateCreated": "2016-01-26 10:57:23.000",
-      "dateStarted": "2019-01-20 01:50:53.315",
-      "dateFinished": "2019-01-20 01:50:53.326",
+      "dateStarted": "2019-01-20 02:02:43.026",
+      "dateFinished": "2019-01-20 02:02:43.041",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%sh\n\n#remove existing copies of dataset from HDFS\n#hadoop fs -rm -r -f /tmp/airflightsdelays\n#hadoop fs -mkdir /tmp/airflightsdelays\n\n#put data into HDFS\nhadoop fs -put /tmp/flights_200*.bz2 /tmp/airflightsdelays/\nhadoop fs -put /tmp/weather_200*.gz /tmp/airflightsdelays/\nhadoop fs -ls -h /tmp/airflightsdelays/\n",
+      "text": "\n%sh\n\n#remove existing copies of dataset from HDFS\n#hadoop fs -rm -r -f /tmp/airflightsdelays\n#hadoop fs -mkdir /tmp/airflightsdelays\n\n#put data into HDFS\n#hadoop fs -put /tmp/flights_200*.bz2 /tmp/airflightsdelays/\n#hadoop fs -put /tmp/weather_200*.gz /tmp/airflightsdelays/\nhadoop fs -ls  /tmp/airflightsdelays/\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-20 01:51:07.673",
+      "dateUpdated": "2019-01-20 02:03:39.659",
       "config": {
         "enabled": true,
         "editorMode": "ace/mode/sh",
@@ -206,7 +206,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "put: `/tmp/airflightsdelays/flights_2007.csv.bz2\u0027: File exists\nput: `/tmp/airflightsdelays/flights_2008.csv.bz2\u0027: File exists\nput: `/tmp/airflightsdelays/weather_2007.csv.gz\u0027: File exists\nFound 4 items\n-rw-r--r--   1 zeppelin hdfs    115.6 M 2019-01-20 01:24 /tmp/airflightsdelays/flights_2007.csv.bz2\n-rw-r--r--   1 zeppelin hdfs    108.5 M 2019-01-20 01:24 /tmp/airflightsdelays/flights_2008.csv.bz2\n-rw-r--r--   1 zeppelin hdfs     95.9 M 2019-01-20 01:24 /tmp/airflightsdelays/weather_2007.csv.gz\n-rw-r--r--   1 zeppelin hdfs    193.6 M 2019-01-20 01:51 /tmp/airflightsdelays/weather_2008.csv.gz\n"
+            "data": "Found 4 items\n-rw-r--r--   1 zeppelin hdfs  121249243 2019-01-20 01:24 /tmp/airflightsdelays/flights_2007.csv.bz2\n-rw-r--r--   1 zeppelin hdfs  113753229 2019-01-20 01:24 /tmp/airflightsdelays/flights_2008.csv.bz2\n-rw-r--r--   1 zeppelin hdfs  100506632 2019-01-20 01:24 /tmp/airflightsdelays/weather_2007.csv.gz\n-rw-r--r--   1 zeppelin hdfs  203005891 2019-01-20 01:51 /tmp/airflightsdelays/weather_2008.csv.gz\n"
           }
         ]
       },
@@ -219,8 +219,8 @@
       "jobName": "paragraph_1453820140253_1688529977",
       "id": "20160126-145540_1053413176",
       "dateCreated": "2016-01-26 02:55:40.000",
-      "dateStarted": "2019-01-20 01:51:07.725",
-      "dateFinished": "2019-01-20 01:51:19.607",
+      "dateStarted": "2019-01-20 02:03:39.708",
+      "dateFinished": "2019-01-20 02:03:41.588",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
@@ -506,7 +506,7 @@
     {
       "text": "%sql\n\nselect dayofWeek, case when depDelay \u003e 15 then \u0027delayed\u0027 else \u0027ok\u0027 end , count(1)\nfrom data_2007tmp \ngroup by dayofweek , case when depDelay \u003e 15 then \u0027delayed\u0027 else \u0027ok\u0027 end ",
       "user": "it-gro",
-      "dateUpdated": "2019-01-20 02:01:31.877",
+      "dateUpdated": "2019-01-20 02:01:53.200",
       "config": {
         "enabled": true,
         "editorMode": "ace/mode/sql",
@@ -856,7 +856,7 @@
     {
       "text": "%sql\n\nselect cast( cast(crsDepTime as int) / 100 as int) as hour,  case when depDelay \u003e 15 then \u0027delayed\u0027 else \u0027ok\u0027 end as delay, count(1) as count\nfrom  data_2007tmp \ngroup by  cast( cast(crsDepTime as int) / 100 as int),  case when depDelay \u003e 15 then \u0027delayed\u0027 else \u0027ok\u0027 end\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-20 02:01:32.116",
+      "dateUpdated": "2019-01-20 02:01:53.460",
       "config": {
         "enabled": true,
         "editorMode": "ace/mode/sql",
